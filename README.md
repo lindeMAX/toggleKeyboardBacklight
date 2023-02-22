@@ -1,6 +1,12 @@
 # ToggleKeyboardBacklight
 
-Automatically toggles your keyboard backlight after a certain amount of seconds.
+Automatically toggles your keyboard backlight.
+
+It is turned off after a certain amount of seconds and turned on again if an event on a given device happend.
+
+Devices that can be used are listed under */dev/input*.
+<br> I prefer using the links under */dev/input/by-path* as they are more human readable:
+<br> Keyboards do end with *-kbd* and mouses/touchpads with *-mouse*.
 
 ## Usage
 
