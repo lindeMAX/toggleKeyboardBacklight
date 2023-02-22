@@ -76,6 +76,10 @@ int setKbBrightness(int brightness) {
 
 // Argument order is path, idle time, <input devices seperated by white spaces>
 int main(int argc, char *argv[]) {
+   if (argc < 3) {
+      fprintf(stderr, "Provide at least two arguments: <timeout> <device_path>\n");
+      exit(1);
+   }
    // First two arguments are <path of working dir> and <timeout>
    const int devList_offset = 2;
    const int num_dev = argc - devList_offset;
