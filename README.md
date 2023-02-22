@@ -20,6 +20,11 @@ E.g.:
 toggleKeyboardBacklight 10 /dev/input/by-path/platform-i8042-serio-1-event-mouse /dev/input/by-path/platform-i8042-serio-0-event-kbd
 ```
 
+## Dependencies
+- gcc
+- make
+- brightnessctl
+
 ## Build & Install
 
 ```Bash
@@ -27,7 +32,7 @@ make build
 sudo make install
 ```
 
-### Uninstall
+## Uninstall
 ```Bash
 sudo make uninstall
 ```
